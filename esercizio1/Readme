@@ -1,0 +1,3 @@
+Per aver un'immagine in formato oci, pushare con docker sul registry privato e successivamente skopeo copy --dest-tls-verify=false oci:/home/marco/Desktop/rhel7:2.0  docker://localhost:5000/rhel7:2.0
+
+al posto di rhel-sleep usare il Dockerfile cap2/esercizio2/container-build 
