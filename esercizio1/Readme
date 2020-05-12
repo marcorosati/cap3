@@ -1,3 +1,12 @@
 Per aver un'immagine in formato oci, pushare con docker sul registry privato e successivamente skopeo copy --dest-tls-verify=false oci:/home/marco/Desktop/rhel7:2.0  docker://localhost:5000/rhel7:2.0
 
 al posto di rhel-sleep usare il Dockerfile cap2/esercizio2/container-build 
+
+TASK
+-installare un registro locale docker-distribution
+-con skopeo pushare l'immagine registry.access.redhat.com/rhel7/rhel sul registry interno e verificare sul filesystem
+-deployare container in locale utilizzando l'immagine sul registry (name test, background)
+-deployare su openshift l'immagine pushata sul registry
+-cancellare imagine su repository privato
+
+
