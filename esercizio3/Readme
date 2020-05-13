@@ -1,0 +1,9 @@
+
+
+TASK
+project common
+creare un image stream (nome hello-world) che punta a registry.lab.example.com:5000/hello-world-nginx
+project image-stream
+deploy container usando l'image stream precedentemente creata (name hello)
+route hello
+

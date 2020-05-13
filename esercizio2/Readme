@@ -1,0 +1,21 @@
+
+
+come immagine utilizza quella ottenuta da cap2/esercizio2/container-build/Dockerfile
+
+Per ottenere l'ip del registry interno usare https://stackoverflow.com/questions/45624945/unable-to-push-a-docker-image-to-local-openshift-origin-registry
+
+# docker container ls | fgrep origin-docker-registry
+9de6bb0cdd28        openshift/origin-docker-registry   "/bin/sh -c '/usr/..."
+
+# docker inspect 9de6bb0cdd28 | fgrep DOCKER_REGISTRY_PORT
+                "DOCKER_REGISTRY_PORT_5000_TCP_PROTO=tcp",
+                "DOCKER_REGISTRY_PORT=tcp://172.30.1.1:5000"
+
+TASK
+esporre il registry iterno di openshift
+pushare un immagine nel registry interno con nome rhel7-info per essere usata nel progetto common(DO288/labs/expose-registry/rhel7-info )
+creare un container in locale dall'immagine sul registry interno (nome container test)
+cancellare immagine dal registry interno con openshift
+cancellare risorse
+rimuovere permessi al developer
+
